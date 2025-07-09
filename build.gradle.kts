@@ -27,6 +27,15 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
+dependencyManagement {
+	imports {
+		mavenBom("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:9.1.3")
+	}
+	dependencies {
+		dependency("com.graphql-java:java-dataloader:5.0.0")
+	}
+}
+
 tasks.generateJava {
 	schemaPaths.add("${projectDir}/src/main/resources/graphql-client")
 	packageName = "com.example.code_guardians_of_nexospace.codegen"
