@@ -21,10 +21,13 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-graphql")
+	implementation("com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter:4.9.0")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.graphql:spring-graphql-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	compileOnly("org.projectlombok:lombok:1.18.30") // Add Lombok dependency
+	annotationProcessor("org.projectlombok:lombok:1.18.30") // Enable annotation processing
 }
 
 dependencyManagement {

@@ -1,0 +1,9 @@
+type Query {
+    guardians: Guardian_Queries!
+}
+
+type Guardian_Queries {
+    echo: Guardian_EchoType!
+    getEvents: Guardian_EventResponse!
+}
+

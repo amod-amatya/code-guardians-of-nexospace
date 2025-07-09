@@ -1,0 +1,4 @@
+type Guardian_EchoType {
+  serverTimeStamp: String!
+  message: String!
+}

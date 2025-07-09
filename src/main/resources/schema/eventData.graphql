@@ -1,0 +1,9 @@
+type Guardian_EventResponse {
+    totalCount: Int
+    datetime: String
+    serialNumber: Int
+    version: String
+    coreEventType: String
+    address: String
+    type: Int
+}
