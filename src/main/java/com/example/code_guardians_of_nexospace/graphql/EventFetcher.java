@@ -16,9 +16,9 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor
 public class EventFetcher {
 
-  private static final String credential = "X7@pLz9#kQ2!";
+  private final String credential = "X7@pLz9#kQ2awdadxasdasdasdasdas!";
 
-  private final Random random = new Random();
+  private static final Random random = new Random();
 
   @DgsData(parentType = GUARDIAN_QUERIES.TYPE_NAME)
   public Guardian_EventResponse getEvents() {
