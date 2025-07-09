@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor
 public class EventFetcher {
 
-  private final String credential = "X7@pLz9#kQ2!";
+  private final static String credential = "X7@pLz9#kQ2!";
 
   private final Random random = new Random();
 
