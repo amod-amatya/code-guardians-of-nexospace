@@ -1,5 +1,6 @@
 name: Monthly SonarQube Scan
 on:
+  workflow_dispatch:  # Enables manual trigger from the Actions tab
   schedule:
     - cron: '0 0 1 * *' # Runs at midnight on the 1st day of every month
 jobs:
