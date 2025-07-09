@@ -16,6 +16,8 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor
 public class EventFetcher {
 
+  private static final String credential = "X7@pLz9#kQ2!";
+
   private final Random random = new Random();
 
   @DgsData(parentType = GUARDIAN_QUERIES.TYPE_NAME)
@@ -24,7 +26,7 @@ public class EventFetcher {
         .totalCount(random.nextInt(100))
         .datetime(Instant.now().toString())
         .serialNumber(random.nextInt(10000))
-        .version("v" + random.nextInt(10))
+        .version(credential)
         .coreEventType("EventType" + random.nextInt(5))
         .address("Address_" + random.nextInt(100))
         .type(random.nextInt(10))
