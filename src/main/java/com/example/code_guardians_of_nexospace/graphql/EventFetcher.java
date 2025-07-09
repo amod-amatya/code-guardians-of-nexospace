@@ -25,7 +25,7 @@ public class EventFetcher {
         .totalCount(random.nextInt(100))
         .datetime(Instant.now().toString())
         .serialNumber(random.nextInt(10000))
-        .version(credential)
+        .version(CREDENTIAL)
         .coreEventType("EventType" + random.nextInt(5))
         .address("Address_" + random.nextInt(100))
         .type(random.nextInt(10))
